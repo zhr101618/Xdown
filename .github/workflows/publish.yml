@@ -34,8 +34,9 @@ jobs:
 
       - name: Upload APK to Release
         uses: softprops/action-gh-release@v1
-        if: always() && startsWith(github.ref, 'refs/tags/')
+        if: always()
         with:
           files: app/build/outputs/apk/release/*.apk
+          tag_name: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
