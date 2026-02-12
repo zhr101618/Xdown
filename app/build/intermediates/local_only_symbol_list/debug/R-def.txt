@@ -1,0 +1,13 @@
+R_DEF: Internal format may change without notice
+local
+drawable app_icon
+drawable ic_download
+drawable ic_download_done
+drawable ic_launcher
+drawable ic_launcher_round
+drawable ic_pause
+drawable ic_play
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.XDownloader
