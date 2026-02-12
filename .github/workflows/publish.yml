@@ -36,7 +36,9 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: always()
         with:
-          files: app/build/outputs/apk/release/*.apk
+          files: |
+            app/build/outputs/apk/release/*.apk
+            app/release/*.apk
           tag_name: ${{ github.ref_name }}
           draft: false
           prerelease: false
